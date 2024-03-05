@@ -7,3 +7,14 @@ let d = false;
 
 console.log(a + b + " " + d)
 console.log(a)
+
+
+let age = 27;
+friend = age > 18 ? "old" : "young";
+
+console.log(friend)
+
+
+
+
+
