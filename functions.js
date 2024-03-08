@@ -53,6 +53,19 @@ function findAverage(numbers) {
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
     }
-    return sum / numbers.length;
+    return (sum / numbers.length).toFixed(2);
 }
-findAverage("hello");
+let numArray = [1,2,3,57];
+console.log(findAverage(numArray));
+
+function addedValue(average, bonus){
+    for (let i = 0; i <average.length; i++){
+        average[i] += bonus;
+    }
+}
+
+addedValue(numArray,5);
+console.log(findAverage(numArray));
+
+
+
