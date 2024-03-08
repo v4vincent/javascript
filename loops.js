@@ -70,3 +70,16 @@ for (let i = 0; i < 10; i++){
     accountBalance += monthlyDeposit;
 }
 console.log(accountBalance);
+
+//"simplified" for of loop
+
+let colors = ["red","green","black",'white']
+
+for (let color of colors){
+    console.log(color)
+}
+
+//using forEach method
+colors.forEach(function (item, index){
+    console.log(item + " - " + index)
+})

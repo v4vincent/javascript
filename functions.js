@@ -25,3 +25,34 @@ function drawBox(numRows, numCols, boxChar){
     }
 }
 drawBox(5,4,"!");
+
+function averageNum(num1, num2, num3){
+    let sum = (num1 + num2 + num3);
+    return sum / averageNum.length;
+}
+console.log(averageNum(5,1,8))
+
+
+
+function sayHello(name) {
+    console.log("Hello, " + name + "!");
+    return "wassap";
+}
+
+sayHello("Vincent")
+console.log(sayHello("Vincent"))
+
+function formatNumber(num) {
+    return num.toFixed(7);
+}
+
+console.log(formatNumber(3/7));
+
+function findAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+findAverage("hello");
