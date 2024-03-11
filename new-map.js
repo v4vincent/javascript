@@ -54,7 +54,7 @@ friends.get("Muhun").Car = "Bike";
 console.log(friends);
 
 
-let cast = { // Code will be tested with different actors
+let cast1 = { // Code will be tested with different actors
     "Tom Hanks": "Forrest Gump",
     "Michael Connor Humphreys": "Young Forrest Gump",
     "Robin Wright": "Jenny Curran",
@@ -68,14 +68,14 @@ function roleOf(actorName, cast) {
 
 }
 
-roleOf("Tom Hanks",cast);
+// roleOf("Tom Hanks",cast);
 
-let cast = { // Code will be tested with different actors
-    "Tom Hanks": "Forrest Gump",
-    "Michael Connor Humphreys": "Young Forrest Gump",
-    "Robin Wright": "Jenny Curran",
-    "Gary Sinise": "Lieutenant Dan Taylor"
-};
+// let cast = { // Code will be tested with different actors
+//     "Tom Hanks": "Forrest Gump",
+//     "Michael Connor Humphreys": "Young Forrest Gump",
+//     "Robin Wright": "Jenny Curran",
+//     "Gary Sinise": "Lieutenant Dan Taylor"
+// };
 
 function deleteFromMovie(actorName, cast) {
 
@@ -89,12 +89,12 @@ function deleteFromMovie(actorName, cast) {
 }
 
 
-let actors = new Map(); // Code will be tested with different actors
+let actors2 = new Map(); // Code will be tested with different actors
 
-actors.set("Orlando Bloom", { movie: "The Lord of the Rings", role: "Legolas" });
-actors.set("Keira Knightley", { movie: "Pirates of the Caribbean", role: "Elizabeth Swann" });
-actors.set("Jessica Chastain", { movie: "Interstellar", role: "Murph" });
-actors.set("Robin Wright", { movie: "Forrest Gump", role: "Jenny Curran" });
+actors2.set("Orlando Bloom", { movie: "The Lord of the Rings", role: "Legolas" });
+actors2.set("Keira Knightley", { movie: "Pirates of the Caribbean", role: "Elizabeth Swann" });
+actors2.set("Jessica Chastain", { movie: "Interstellar", role: "Murph" });
+actors2.set("Robin Wright", { movie: "Forrest Gump", role: "Jenny Curran" });
 
 function actorInfo(actorName, actors) {
 
@@ -121,5 +121,5 @@ actors.set("Keira Knightley", { movie: "Pirates of the Caribbean", role: "Elizab
 
 console.log("Number of actors: " + actors.size);
 for (let [actor,role] of actors){
-    console.log("Actor: " + actor + ", Role: " + role)
+    console.log("Actor: " + actor + ", Role: " + role.role)
 }
